@@ -8,7 +8,6 @@ from typing import Dict
 from urllib.parse import quote
 
 from humanize import intword, naturalsize, intcomma
-from humanize.i18n import activate
 
 from manager_download import init_download_manager, DownloadManager as DM
 from manager_environment import EnvironmentManager as EM
@@ -22,8 +21,6 @@ from graphics_list_formatter import (
     make_commit_day_time_list,
     make_language_per_repo_list,
 )
-
-activate(EM.LOCALE)
 
 
 async def get_waka_time_stats(repositories: Dict, commit_dates: Dict) -> str:
