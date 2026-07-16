@@ -14,7 +14,7 @@ def init_localization_manager():
     Load GUI translations JSON file.
     """
     FileManager.load_localization("translation.json")
-    FileManager.activate_locale()
+    #FileManager.activate_locale()
 
 
 class FileManager:
