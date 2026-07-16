@@ -23,7 +23,7 @@ from graphics_list_formatter import (
     make_language_per_repo_list,
 )
 
-activate("pt_BR")
+activate(EM.LOCALE)
 
 
 async def get_waka_time_stats(repositories: Dict, commit_dates: Dict) -> str:
